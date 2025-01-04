@@ -88,6 +88,10 @@ header {
     text-align: left;
 }
 
+.home-detail p {
+    margin-bottom: 40px;
+}
+
 .home-detail .download-social {
     display: flex;
     align-items: center;

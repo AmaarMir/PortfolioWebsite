@@ -117,7 +117,9 @@ header {
     color: #fff;
 }
 
-
+.social-icons {
+    padding: 10px;
+}
 
 .home-detail .social-icons a {
     display: inline-flex;

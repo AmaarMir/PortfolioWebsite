@@ -116,11 +116,6 @@ header {
     color: #fff;
 }
 
-.home-detail .social-icons {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
 .home-detail .social-icons a {
     display: inline-flex;
     padding: 8px;

@@ -94,6 +94,7 @@ header {
 
 .home-detail .download-social {
     display: inline-block;
+    margin: 10px;
     align-items: center;
 }
 

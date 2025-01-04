@@ -93,7 +93,7 @@ header {
 }
 
 .home-detail .download-social {
-    display: flex;
+    display: inline-block;
     align-items: center;
 }
 

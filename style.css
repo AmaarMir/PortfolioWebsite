@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;    
+    height: 100%;
+    background: url(background.jpg) no-repeat center / cover;
+    padding: 50px 5%;
+}
+
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in {
+    100% {
+        transform: scale(1);
+    }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    border-color: #fff;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make the home section take up the full height of the viewport */
+    text-align: center; /* Center the text */
+    padding: 50px 5%;
+    color: #fff;
+}
+
+.home-detail h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.home-detail h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.home-detail h3 {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.home-detail .download-social {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border:  2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+}
+
+.home-detail .social-icons {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.home-detail .social-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.home-detail .social-icons a:hover {
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+
+.home-img .img-box {
+    margin-left: 33%;
+    margin-bottom: 50px;
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img .img-box img {
+    position: static;
+    top: 30px;
+    display: flex;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* Adjustments to .about */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 5%;
+    color: #fff;
+    margin-top: 50px;
+    height: 100%;
+}
+
+.aboutcontainer {
+    position: relative;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+}
+
+.about h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.about h4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border:  2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+    margin-top: 50px;
+}
+
+/* Adjustments to projects */
+.project {
+    padding: 30px 5%;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the text */
+    padding: 50px 5%;
+    color: #fff;
+}
+
+.projects-detail h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.projects-detail h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.projects-detail h3 {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.projects-detail .download-social {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
